@@ -1,0 +1,17 @@
+{
+  "name": "nodechatapp",
+  "version": "1.0.0",
+  "description": "a basic chat app",
+  "main": "index.js",
+  "scripts": {
+    "devStart": "nodemon server.js"
+  },
+  "author": "Kevin Rana",
+  "license": "ISC",
+  "dependencies": {
+    "socket.io": "^3.0.3"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.6"
+  }
+}

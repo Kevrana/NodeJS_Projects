@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Kevin's ChatApp</title>
+    <script defer src="http://localhost:3000/socket.io/socket.io.js"></script>
+    <script defer src="script.js"></script>
+    <style>
+       .container {
+            margin: 0 auto;
+            text-align: center;
+            
+        }
+       
+        body { 
+            padding: 0;
+            margin: 0; 
+            display: inline;
+            justify-content: center;
+        }
+
+        #send-container {
+            
+        }
+        #message-container {
+            width: 80%;
+            max-width:1000px;
+            justify-content: center;
+        }
+
+        #message-container div {
+            background: rgb(213, 192, 235);
+            padding: 5px;
+            border-color: black;
+            border: 10px;
+        }
+
+        #message-container div:nth-child(2n) {
+            background-color: #CCC;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="container"></div>
+        <div id="message-container"></div>
+        
+        <form id="send-container">
+            <input type="text" id="message-input">
+            <button type="submit" id="send-button">Send</button>
+        </form>
+</div>
+</body>
+</html>
